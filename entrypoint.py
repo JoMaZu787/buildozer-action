@@ -28,7 +28,7 @@ def main():
     change_owner(env["USER"], os.environ["GITHUB_OUTPUT"])
     set_output(env["INPUT_REPOSITORY_ROOT"], env["INPUT_WORKDIR"])
     change_owner("root", repository_root)
-    change_owne("root", os.environ["GITHUB_OUTPUT"])
+    change_owner("root", os.environ["GITHUB_OUTPUT"])
 
 
 def change_owner(user, repository_root):
