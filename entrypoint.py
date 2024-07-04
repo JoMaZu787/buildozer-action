@@ -85,7 +85,7 @@ def change_directory(repository_root, workdir):
     directory = os.path.join(repository_root, workdir)
     # Change directory to workir
     if not os.path.exists(directory):
-        print("::error::Specified workdir is not exists.")
+        print(f"::error::Specified workdir '{directory}' does not exist.")
         exit(1)
     os.chdir(directory)
 
